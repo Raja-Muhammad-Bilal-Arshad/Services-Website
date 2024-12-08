@@ -5,6 +5,12 @@ header {
     align-items: center;
     padding: 10px 50px;
     background-color: rgb(23, 22, 22);
+    height: 135px;
+}
+#myVideo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
 
 .logo a {
