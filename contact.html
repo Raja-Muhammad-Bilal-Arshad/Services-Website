@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header>
+        <div class="logo">
+            <a href="#">Alpha Team</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Services.html2.html">Services</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+        <button>Contact Us</button>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-info">
+        <div class="contact-details">
+            <h2>Our Contacts</h2>
+            <div class="contact-item">
+                <h3>Location:</h3>
+                <p>Sargodha Road, Chiniot, Punjab, Pakistan</p>
+            </div>
+            <div class="contact-item">
+                <h3>Phone:</h3>
+                <p>+92 3055127 159</p>
+            </div>
+            <div class="contact-item">
+                <h3>Mail:</h3>
+                <p><a href="mailto:mohsinshoaib299@gmail.com">Alphateam@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <h3>Working Hours:</h3>
+                <p>09:00 - 18:00</p>
+            </div>
+        </div>
+
+        <!-- Google Map Section -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.205382934748!2d73.0331766754093!3d31.600831574177214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39223f08dbbe5fa5%3A0xb45ea8924093c29d!2sFAST%20University%20(Chiniot-Faisalabad%20Campus)!5e0!3m2!1sen!2s!4v1733567906969!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="free-consultation">
+        <h2>Consult Us</h2>
+        <form class="consultation-form" onsubmit="saveToCSV(event)">
+            <div class="form-group">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="phone" placeholder="Phone Number" pattern="[0-9]{10,15}" title="Enter a valid phone number" required>
+            </div>
+            <textarea id="message" placeholder="Your message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        function saveToCSV(event) {
+            event.preventDefault();
+
+            // Get form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const message = document.getElementById("message").value;
+
+            // Prepare data in CSV format
+            const csvData = `Name, Email, Phone, Message\n${name}, ${email}, ${phone}, "${message}"\n`;
+
+            // Create a downloadable link
+            const blob = new Blob([csvData], { type: 'text/csv' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'contactFormData.csv';  // CSV file name
+
+            // Trigger the download
+            link.click();
+
+            // Clear the form
+            document.getElementById("name").value = "";
+            document.getElementById("email").value = "";
+            document.getElementById("phone").value = "";
+            document.getElementById("message").value = "";
+
+            // Notify the user
+            alert("Thank you for contacting us! Your data has been saved.");
+        }
+    </script>
+
+<footer>
+    <div class="footer">
+        <div class="footer-first">
+            <h3>Team's Portfolio</h3><br>
+            <ul>
+                <li><a href="/">BILAL ARSHAD</a></li>
+                <li><a href="/">MOHSIN SHOHAIB</a></li>
+                <li><a href="/">ABDULLAH SAEED</a></li>
+        </div>                                                              
+        <div class="footer-second">
+            <h3>BROWSE</h3><br>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Services.html2.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+        </div>
+        <div class="footer-third">
+            <h3>Follow Us</h3><br>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/raja-muhammad-bilal-arshad/">LINKEDIN</a></li>
+                <li><a href="https://www.linkedin.com/in/mohsin-shoaibb/">INSTAGRAM</a></li>
+                <li><a href="https://www.linkedin.com/in/mohsin-shoaibb/">LINKTREE</a></li>
+                <li><a href="https://leetcode.com/u/Raja_Muhammad_Bilal_Arshad/">LEETCODE</li>
+                <li><a href="https://github.com/Raja-Muhammad-Bilal-Arshad">GITHUB</a></li>
+            </ul>
+        </div>
+        <div class="footer-fouth">
+            <h3>CONTACT US</h3><br>
+            <ul>
+                <li><a href="/">GMAIL</a></li>
+                <li><a href="/">HOTMAIL</a></li>
+                <li><a href="/">WHATSAPP</a></li>
+                <li><a href="/">DISCORD</a></li>
+                <li><a href="/">GITHUB</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-rights">
+        Colyright &#169TeamALPHA.com All right are reserved
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(1, 1, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#myVideo{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+main hr {
+border: 0;
+background-color: rgb(28, 129, 218); 
+height: 1.2px;
+margin: 60px 84px;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+.upper-section {
+    text-align: center;
+background-image: url("Calm\ White\ Snow.jpg"); 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 50px 0; 
+color: white; 
+}
+.firstsection {
+display: flex;
+align-items: center;
+justify-content: space-around;
+color: white;
+min-height: 70vh; 
+}
+
+.firstsection > div{
+    width: 130%;
+}
+.leftsection{
+    font-size: 1.2rem;
+
+}
+.btn a
+{
+    text-decoration: none;
+    color: white;
+}
+.leftsection .button{
+    background-color: transparent;
+    border-color: black;
+    color: white;
+    padding: 50px 0px;;
+}
+.leftsection .btn{
+    padding: 12px;
+    background:transparent;
+    color:white;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 20px;
+
+}
+.leftsection .btn:hover{
+
+    transform: translateX(30px); 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); 
+     background-color: rgba(200, 100, 150, 0.8); 
+        border-color: black;
+    background-color: rgb(158, 46, 115);
+    color: white;
+ 
+
+}
+
+.rightsection img{
+    width: 80%;
+}
+.red{
+    color: rgb(203, 36, 203);
+}
+.text-grey{
+    color: grey;
+}
+#element{
+    color: rgba(232, 238, 239, 0.937);
+    font-size: 3rem;
+}
+.element{
+    font-size: 3%;
+}
+
+.secondsection h1{
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.636);
+}
+
+.secondsection {
+    text-align: center;
+max-width: 80vw;
+margin: auto;
+height: auto; /* Dynamic height based on content */
+display: flex; /* Enables Flexbox */
+justify-content: flex-start; /* Aligns boxes from left to right */
+gap: 20px; /* Space between boxes */
+background-color: rgba(0, 0, 0, 0.636);
+padding: 20px;
+flex-wrap: wrap; /* Ensures responsiveness for smaller screens */
+}
+
+.service1 {
+    position: relative;
+    text-align: center;
+    border-radius: 10px;
+background-color: transparent;
+padding: 20px;
+width: 200px; /* Fixed width for consistent layout */
+border: 2px solid white;
+border-radius: 10px;
+color: white;
+transition: transform 0.3s, box-shadow 0.3s;
+background-image: url("Software.png");
+}
+.service1 button{
+background-color: rgb(4, 1, 10);
+color: white;
+}
+.service1 button:hover{
+background-color: rgb(61, 128, 100);
+border-color: rgb(3, 14, 24);
+}
+
+.service1:hover {
+transform: translateX(50px);
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+background-color: rgba(115, 100, 200, 0.8);
+
+}
+
+.image-top{
+    width: 23px;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+/* This applies to everything below the line, excluding the footer */
+main > section {
+background-color: rgb(10, 10, 20); /* Set your desired background color */
+color: white; /* Text color to ensure contrast */
+padding: 50px 0; /* Add padding to give space */
+}
+
+

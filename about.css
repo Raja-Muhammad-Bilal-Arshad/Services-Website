@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#myVideo{
+    width: 100px;
+    height: 90px;
+}
+
+body {
+    background-color: rgb(1, 1, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+
+/* First Section */
+.firstsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 50px;
+    background-color: rgb(10, 10, 20);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h1 {
+    font-size: 2.5rem;
+    color: rgb(203, 36, 203);
+    margin-bottom: 20px;
+}
+
+.text-section p {
+    margin-bottom: 20px;
+}
+
+.text-section a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Join Us Button */
+.text-section .join button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover */
+}
+
+.text-section .join button:hover {
+    background-color: rgb(158, 46, 115);
+    color: white;
+    transform: translateX(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for hover feedback */
+}
+
+.image-section img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Section Two */
+.sectiontwo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    margin-bottom: 50px;
+}
+
+.text-section2 {
+    color: white;
+    flex: 1;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.text-section h2 {
+    font-size: 40px;
+    color: #001c47;
+    margin-bottom: 20px;
+}
+
+.partnerlogos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.partnerlogos img {
+    height: 80px;
+}
+
+.partnerlogos img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Section Three */
+.sectionthree {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 160px;
+    padding-bottom: 100px;
+    background-color: rgb(10, 10, 20);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.text-section3 {
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.clients {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.clients img {
+    width: 100px;
+    height: 70px;
+    object-fit: contain;
+    box-shadow: 10px 10px 10px 10px rgba(0.1, 0.1, 0.1, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.clients img:hover {
+    transform: scale(1.1);
+}
+
+/* Section Four */
+.section4 {
+    padding: 60px 20px;
+    color: white;
+    margin-top: 110px;
+}
+
+.container4 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f0f4f9;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.succes-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.succes-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.rightside {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.success-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.success-text p {
+    margin-bottom: 15px;
+}
+
+/* Our Team Section */
+.ourteam {
+    padding: 50px 20px;
+}
+
+.team-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.image-container {
+    width: 180px;
+    height: 200px;
+    border-radius: 5px;
+    margin: 0 auto 10px;
+    border: 2px solid white;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: rgb(203, 36, 203);
+}
+
+.team-member p {
+    font-size: 15px;
+    color: white;
+}
+
+
